@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- next line imports the font "lobster" from google, and allow us to use it in our web-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<html>
+    <head>
+        <!-- insert metadata here -->
+        <!-- css style box -->
+        <!-- next defines the color of the h1 element
+        <style>
+            h1 {
+                color:red;
+            }
+        </style>
+        
+        Next defines a class, to be used, write it in the chosen element, example
+                <h1 class="red-text";>
+                    you can use it in many html elements
+        <style>
+            .red-text {
+                color: blue;
+                font-size: 30px;
+            }
+        </style>
+         you can create classes to define the size of an image, example
+            .smaller-image {
+                width: 100px;
+            }
+                or
+            .larger-image {
+                heigth: 500px;
+            }
+            the second font in the family fonts, it's a backup, in case the first where unable
+            you can create a border for an html element creating a class. example
+            .thick-green-border {
+                border-color: green;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 10px; it can use pixels or percentage
+            }
+            you can use it in html elements in addition to other class, one space separation. example
+            <p class:"class1 class2">
+        -->
+        <!-- padding can be used with top, right, bottom an left, and different value each other 
+             you can do same thing with margin, and use clockwise notation both
+
+             You can creat a set of css rulles for an 2 attribute=value", example, 
+            [type: 'checkbox'] {
+                 padding: 10px 20px 10px 20px;
+             }
+             You can give attributes to the body element, example
+             body {
+                 background-color: grey;
+                 font-family: monospace;
+                 color: green;
+             }
+        -->
+         <style>
+            .red-text {
+                color: blue;
+                font-size: 50px;
+                font-family: monospace, lobster;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            li {
+                font-family: lobster, monospace;
+            }
+
+            .smaller-image{
+                width: 100px;
+            }
+
+            .thick-green-border {
+                border-color: green;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 10px;
+            }
+
+            .silver-background {
+                background-color: silver;
+                padding: 10px;
+                margin: 10px;
+                width: 250px;
+             }
+
+            .red-background {
+                background-color: red;
+            }
+            
+            #o-list {
+                background-color: red;
+                padding: 10px;
+                margin: 10px;
+                width: 250px;
+            }
+
+            [type='checkbox'] {
+                margin: 10px 0 15px 0px;
+            }
+            body {
+                background-color: lightgrey;
+                color: darkred;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            #lists{
+                position: top, right;
+                display:flex;
+            }
+            </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="red-text";>This is a TRIBUTE PAGE</h1>
+                <p>Here is an <a href="#image1">Internal link to the cat photo</a> to show how it works</p>
+                <p>This is part of the info of the tribute page</p>
+                <p style="color:darkgreen;">This is an example of a <a href="#" target="_blank">death link</a></p>
+                <a href="https://es.wikipedia.org/wiki/Felis_silvestris_catus" target="_blank">Gatos in Wikipedia</a>
+                <br>
+                <!-- The image will be a link to the wikipedia's cat web to -->
+                <a href="https://es.wikipedia.org/wiki/Felis_silvestris_catus" target="_blank"><img id="image1" class="smaller-image thick-green-border"; src="https://bit.ly/fcc-relaxing-cat" alt="I don't like cats"></a>
+                <!-- ordered list in a division element, with id, to use format lements-->
+                <div id="lists">
+                    <div id="o-list">
+                    <ol>
+                        <li>first element</li>
+                        <li>second element</li>
+                        <li>third element</li>
+                    </ol>
+                    </div> 
+                    <!-- Example of unordered list in a division element, with class elements-->
+                    <div class="silver-background";>
+                    <ul>
+                        <li>first element</li>
+                        <li>second element</li>
+                        <li>third element</li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- input elements, sending action, sending button, text required, radio buttons, checkboxes, sending value, checked-->
+                <form action="c:/test/test.txt">
+                    <input type="text" required placeholder="I want you write here">
+                    <button type="submit">Send your message</button>
+                    <br>
+                    <p>Please select one</p>
+                    <label for="first">
+                        <input id="first" value="first" type="radio" name="position" checked>First
+                    </label>
+                    <label for="second">
+                        <input id="second" value="second" type="radio" name="position">Second
+                    </label>
+                    <label for="third">
+                        <input id="third" value="third" type="radio" name="position">Third
+                    </label>
+                    <p>Next, you can pick more than one option. Feel free to do it </p>
+                    <label for="loving">
+                        <input id="loving" value="loving" type="checkbox" name="personality"> Loving
+                    </label>
+                    <label for="hating">
+                        <input id="hating" value="hating" type="checkbox" name="personality"> Hating
+                    </label>
+                    <label for="indifferent">
+                        <input id="indifferent" value="indifferent" type="checkbox" name="personality"> Indifferent
+                    </label>
+                </form>
+        </main>
+    </body>
+</html>

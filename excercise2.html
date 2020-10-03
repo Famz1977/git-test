@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<html>
+    <head>
+        <style>
+            .toplinks{
+               padding: 10px;
+               color:black;               
+            }
+            #gmail-images{
+                position:absolute;
+                top: 10px;
+                right: 20px;
+            }
+            #MainTitle{
+                display:flex;
+                justify-content: center;
+                font-size: 100px;
+                padding: 5px;
+            }
+            #g1{
+                color: blue;
+            }
+            #o1{
+                color:red;
+            }
+            #o2{
+                color: yellow;
+            }
+            #g2{
+                color: blue;
+            }
+            #l{
+                color: green;
+            }
+            #e{
+                color: red;
+            }
+            #searchbar{
+                display:flex;
+                justify-content: center;
+                height: 50px;
+                position: relative;
+                top:-20px;
+            }
+            #buttons{
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            #offered{
+                display: flex;
+                justify-content: center;
+                }
+
+            a {
+                text-decoration-line: none;
+            }
+            .footer{
+           
+                background-color: lightgray;
+                bottom: 5px;
+            }
+            .b_left{
+                display: flex;
+                padding: 5px;
+                position: absolute;
+                left: 10px;
+                grid-area: left;
+            }
+            .b_right{
+                display: flex;
+                padding: 5px;
+                position: absolute;
+                right: 10px;
+                grid-area: right;
+            }
+            .bottom{
+                display:flex;
+               
+            }
+            .chile{
+                display: flex;
+                background-color: lightgray;
+                bottom: 15px;
+            }
+            .foot{
+                background: lightgray;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "left right";
+            }
+
+        </style>
+
+
+
+    </head>
+        <body>
+            <main>
+
+                <div id="gmail-images">
+                    <a href="www.gmail.com" target="blank" float="left" class="toplinks">Gmail</a>
+                    <a href="https://www.google.cl/imghp?hl=es-419&tab=wi&ogbl" target="blank" float="right"  class="toplinks">Images</a>
+                </div>
+
+                <div id="MainTitle">
+                    <p id="g1">G</p>
+                    <p id="o1">o</p>
+                    <p id="o2">o</p>
+                    <p id="g2">g</p>
+                    <p id="l">l</p>
+                    <p id="e">e</p>
+                </div>
+
+                <div id="searchbar">
+                    <input type="text" placeholder="What are you looking for">
+                </div>
+
+                <div id="buttons">
+                    <button type="submit">Google search</button>
+                    <button type="submit">I'am feeling lucky</button>
+                </div>
+
+                <div id="offered">
+                    <p>Google offered in: <a href="#">Español (Latinoamérica)</a></p>
+                </div>
+
+                <p class="bottom footer">Chile</p>
+
+                <div class="b_right foot">
+                   
+                        <a href="#" target="blank" class="toplinks b_left">Advertising</a>
+                        <a href="#" target="blank" class="toplinks b_left">Business</a>
+                        <a href="#" target="blank" class="toplinks b_left">About</a>
+                        <a href="#" target="blank" class="toplinks b_left">How Seach works</a>
+                   
+
+                    
+                        <a href="#" target="blank" class="toplinks b_right">Privacy</a>
+                        <a href="#" target="blank" class="toplinks b_right">Terms</a>
+                        <a href="#" target="blank" class="toplinks b_right">Settings</a>
+                    
+                </div>
+
+            </main>
+        </body>
+
+
+
+
+
+
+
+</html>
