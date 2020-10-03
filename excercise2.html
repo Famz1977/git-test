@@ -59,24 +59,19 @@
             a {
                 text-decoration-line: none;
             }
-            .footer{
-           
-                background-color: lightgray;
-                bottom: 5px;
-            }
             .b_left{
                 display: flex;
                 padding: 5px;
                 position: absolute;
                 left: 10px;
-                grid-area: left;
+                grid-area: left-d;
             }
             .b_right{
                 display: flex;
                 padding: 5px;
                 position: absolute;
                 right: 10px;
-                grid-area: right;
+                grid-area: right-d;
             }
             .bottom{
                 display:flex;
@@ -85,13 +80,17 @@
             .chile{
                 display: flex;
                 background-color: lightgray;
-                bottom: 15px;
+                grid-area: left-u;
             }
             .foot{
-                background: lightgray;
+                display: flex;
+                background-color: lightgray;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-areas: "left right";
+                grid-template-rows: auto auto;
+                grid-template-areas:
+                    "left-u right-u"
+                    "left-d right-d";
             }
 
         </style>
@@ -129,21 +128,19 @@
                     <p>Google offered in: <a href="#">Español (Latinoamérica)</a></p>
                 </div>
 
-                <p class="bottom footer">Chile</p>
+                <p class="bottom foot">Chile</p>
 
-                <div class="b_right foot">
-                   
-                        <a href="#" target="blank" class="toplinks b_left">Advertising</a>
-                        <a href="#" target="blank" class="toplinks b_left">Business</a>
-                        <a href="#" target="blank" class="toplinks b_left">About</a>
-                        <a href="#" target="blank" class="toplinks b_left">How Seach works</a>
-                   
-
+                <div class="foot">
                     
-                        <a href="#" target="blank" class="toplinks b_right">Privacy</a>
-                        <a href="#" target="blank" class="toplinks b_right">Terms</a>
-                        <a href="#" target="blank" class="toplinks b_right">Settings</a>
-                    
+                    <a href="#" target="blank" class="toplinks b_left"> Advertising </a>
+                    <a href="#" target="blank" class="toplinks b_left"> Business </a>
+                    <a href="#" target="blank" class="toplinks b_left"> About </a>
+                    <a href="#" target="blank" class="toplinks b_left"> How Seach works </a>
+                                    
+                    <a href="#" target="blank" class="toplinks b_right"> Privacy </a>
+                    <a href="#" target="blank" class="toplinks b_right"> Terms </a>
+                    <a href="#" target="blank" class="toplinks b_right"> Settings </a>
+                
                 </div>
 
             </main>
