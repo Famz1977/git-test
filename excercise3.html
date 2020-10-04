@@ -86,15 +86,32 @@
             }
 
             .chile{
-                background-color: rgb(230, 224, 224);
-                margin:0%;
-                height: 40px;
+                grid-area: upleft;
             }
 
-            .chile2{
-                align-self: center;
-            }
+           .footer {
+                position: fixed;
+                bottom: 1px;
+                width: 99%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 50px 50px;
+                grid-template-areas:
+                    "upleft upright"
+                    "downleft downright";
+                background-color: lightgray;
+           }
 
+
+           .footleft{
+               grid-area: downleft;
+           }
+
+           .footright{
+               grid-area: downright;
+               float: right;
+               justify-self: right;
+           }
 
             /*.toplinks{
                padding: 10px;
@@ -221,22 +238,25 @@
                     <p>Google offered in: <a href="#">Español (Latinoamérica)</a></p>
                 </div>
 
-                <div class="chile">
-                    <p>Chile</p>
-                </div>  
+                <div class="footer">
+                    <div class="chile">
+                        <p>Chile</p>
+                    </div>  
 
-                <div class="foot">
+                    <div class="footleft link-black">
+                        
+                        <a href="#" target="blank">Advertising</a>
+                        <a href="#" target="blank">Business</a>
+                        <a href="#" target="blank">About</a>
+                        <a href="#" target="blank">How Seach works</a>
+                    </div>
                     
-                    <a href="#" target="blank" class="toplinks b_left">Advertising</a>
-                    <a href="#" target="blank" class="toplinks b_left">Business</a>
-                    <a href="#" target="blank" class="toplinks b_left">About</a>
-                    <a href="#" target="blank" class="toplinks b_left">How Seach works</a>
-                                    
-                    <a href="#" target="blank" class="toplinks b_right">Privacy</a>
-                    <a href="#" target="blank" class="toplinks b_right">Terms</a>
-                    <a href="#" target="blank" class="toplinks b_right">Settings</a>
-                
-                </div>
+                    <div class="footright link-black">
+                        <a href="#" target="blank">Privacy</a>
+                        <a href="#" target="blank">Terms</a>
+                        <a href="#" target="blank">Settings</a>
+                    </div>
+                </div>  
 
             </main>
         </body>
