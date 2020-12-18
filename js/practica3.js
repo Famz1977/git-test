@@ -586,6 +586,6 @@ test.reverse();
 
 document.write(test + "<br>");
 
-let string = test.join();
+let string = test.join();// becomes the array into a string
 
 document.write(string);

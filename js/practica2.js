@@ -23,7 +23,28 @@
 // validarCliente(4);
 // validarCliente(5);
 
+let free = false;
 
+function validarCliente() {
+	let hora = prompt ("Indique que hora es, por favor")
+	let edad = prompt("Indique su edad, por favor");
+	if (edad >= 18){
+		if ((hora >= 2) && (free === false)){
+		alert ("Felicidades, puedes pasar gratis a esta fiesta!");
+		free = true;
+		} else {
+			if((hora >= 1) && (hora <2)) {
+				alert ("Es la " + hora + ", puedes pasar pagando a entrada.") 
+			} else {
+			alert ("Son las " + hora + ", puedes pasar pagando a entrada.");
+		}
+	} 
+	}else {
+		alert ("Eres menor de edad, no puedes entrar.");
+}
+}
+
+validarCliente();
 //-----------------------------------------------
 
 
@@ -519,28 +540,28 @@
 //----------------------------
 
 
-const obtenerInformacion = (materia)=>{
-	materias = {
-		fisica: ["Mateo", "pedro", "pepito", "cofla", "maria"],
-		programacion: ["Marcos", "pedro", "juan", "pepito"],
-		logica: ["Lucas", "pedro", "juan", "pepito", "cofla", "maria"],
-		quimica: ["Juan", "pedro", "juan", "pepito", "cofla", "maria"]
-	}
-	if (materias[materia] !== undefined){
-		return [materias[materia], materia];
-	} else {
-		return false;
-	}
-}
+// const obtenerInformacion = (materia)=>{
+// 	materias = {
+// 		fisica: ["Mateo", "pedro", "pepito", "cofla", "maria"],
+// 		programacion: ["Marcos", "pedro", "juan", "pepito"],
+// 		logica: ["Lucas", "pedro", "juan", "pepito", "cofla", "maria"],
+// 		quimica: ["Juan", "pedro", "juan", "pepito", "cofla", "maria"]
+// 	}
+// 	if (materias[materia] !== undefined){
+// 		return [materias[materia], materia];
+// 	} else {
+// 		return false;
+// 	}
+// }
 
-let informacion = obtenerInformacion("logica");
+// let informacion = obtenerInformacion("logica");
 
-if (informacion !== false) {
-	document.write(`Alumnos inscritos en la clase de ${informacion[1]}: ${informacion[0]}"<br>"`);
-} else {
-	document.write("La informacion solicitada no existe");
-}
+// if (informacion !== false) {
+// 	document.write(`Alumnos inscritos en la clase de ${informacion[1]}: ${informacion[0]}"<br>"`);
+// } else {
+// 	document.write("La informacion solicitada no existe");
+// }
 
-let profesor = obtenerInformacion("logica");
-profesor.shift();
-document.write(profesor);
+// let profesor = obtenerInformacion("logica");
+// profesor.shift();
+// document.write(profesor);
