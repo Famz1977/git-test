@@ -59,6 +59,10 @@
 // document.write(resultado);
 // }
 
+
+//--------------------------------------------
+
+
 // const sumar = (num1,num2)=>{
 // 	return parseInt(num1) + parseInt(num2);
 // }
@@ -422,3 +426,121 @@
 // let numero = Math.LOG2E; entrega el logaritmo de E con base 2
 // let numero = Math.LOG10E; entrega el logaritmo de E con base 10
 
+
+//--------------------------------------------------
+
+// class Calculadora{
+// 	constructor(){
+
+// 	}
+// sumar  (num1,num2) {
+// 	return parseInt(num1) + parseInt(num2);
+// }
+// restar  (num1,num2) {
+// 	return parseInt(num1) - parseInt(num2);
+// }
+// multiplicar  (num1,num2) {
+// 	return parseInt(num1) * parseInt(num2);
+// }
+// dividir  (num1,num2) {
+// 	return parseInt(num1) / parseInt(num2);
+// }
+// potenciar (num,exp) {
+// 	return parseInt(num) ** parseInt(exp);
+// }
+
+// raizCuadrada (num1) {
+// 	return Math.sqrt (parseInt(num1));
+// }
+
+// raizCubica (num1) {
+// 	return Math.cbrt (parseInt(num1));
+// }
+
+// }
+
+// const calculadora = new Calculadora();
+
+// alert ("Indique la operacion que dese efectuar");
+// let operacion = prompt("1 para Suma, 2 para Resta, 3 para Multiplicar, 4 para Dividir, 5 para Potenciar, 6 para obtener raiz cuadrada, o 7 para raiz cúbica");
+
+// if (operacion == 1) {
+// 	let numero1 = prompt("Indique el primer numero a sumar");
+// 	let numero2 = prompt("Indique el segundo numero a sumar");
+// 	resultado = calculadora.sumar(numero1,numero2);
+// 	alert(`Tu resultado es ${resultado}`);
+// }
+
+// else if (operacion == 2) {
+// 	let numero1 = prompt("Indique el primer numero a restar");
+// 	let numero2 = prompt("Indique el segundo numero a restar");
+// 	resultado = calculadora.restar(numero1,numero2);
+// 	alert(`Tu resultado es ${resultado}`);
+// }
+
+// else if (operacion == 3) {
+// 	let numero1 = prompt("Indique el primer numero a multiplicar");
+// 	let numero2 = prompt("Indique el segundo numero a multiplicar");
+// 	resultado = calculadora.multiplicar(numero1,numero2);
+// 	alert(`Tu resultado es ${resultado}`);
+// }
+
+// else if (operacion == 4) {
+// 	let numero1 = prompt("Indique el primer numero a dividir");
+// 	let numero2 = prompt("Indique el segundo numero a dividir");
+// 	resultado = calculadora.dividir(numero1,numero2);
+// 	alert(`Tu resultado es ${resultado}`);
+// }
+
+// else if (operacion == 5) {
+// 	let numero1 = prompt("Indique el numero que desea potenciar");
+// 	let numero2 = prompt("Indique la potencia que desea aplicar");
+// 	resultado = calculadora.potenciar(numero1, numero2);
+// 	alert(`Tu resultado es ${resultado}`);
+// }
+
+// else if (operacion == 6) {
+// 	let numero1 = prompt("Indique el numero al que dese aplica la raiz cuadrada");
+// 	resultado = calculadora.raizCuadrada(numero1);
+// 	alert (`Tu resultado es ${resultado}`);
+// }
+
+// else if (operacion == 7) {
+// 	let numero1 = prompt("Indique el numero al que desea aplicar la raiz cúbica");
+// 	resultado = calculadora.raizCubica(numero1);
+// 	alert(`Tu resultado es ${resultado}`);
+// }
+
+// else {
+// 	alert("No se a seleccionado una operacion de la lista");
+// }
+
+
+//----------------------------
+
+
+const obtenerInformacion = (materia)=>{
+	materias = {
+		fisica: ["Mateo", "pedro", "pepito", "cofla", "maria"],
+		programacion: ["Marcos", "pedro", "juan", "pepito"],
+		logica: ["Lucas", "pedro", "juan", "pepito", "cofla", "maria"],
+		quimica: ["Juan", "pedro", "juan", "pepito", "cofla", "maria"]
+	}
+	if (materias[materia] !== undefined){
+		return [materias[materia], materia];
+	} else {
+		return false;
+	}
+}
+
+let informacion = obtenerInformacion("logica");
+
+if (informacion !== false) {
+	document.write(`Alumnos inscritos en la clase de ${informacion[1]}: ${informacion[0]}"<br>"`);
+} else {
+	document.write("La informacion solicitada no existe");
+}
+
+let profesor = obtenerInformacion("logica");
+profesor.shift();
+document.write(profesor);
