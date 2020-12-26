@@ -535,57 +535,223 @@
 // }
 // evaluar(prompt("Indica el valor de tu nota, por favor."));
 
-let test = ["q", "w", "e"];
-document.write(test[1] + "<br>");
+// let test = ["q", "w", "e"];
+// document.write(test[1] + "<br>");
 
-test[1] = "v"; // change the original value in the array's position.
+// test[1] = "v"; // change the original value in the array's position.
 
-document.write(test[1] + "<br>"); // pints the value in the array´s position
+// document.write(test[1] + "<br>"); // prints the value in the array´s position
 
-test.push("g", "h"); // adds elements at the end of the array
+// test.push("g", "h"); // adds elements at the end of the array
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-test.pop();// delete element at the end of the array
+// test.pop();// delete element at the end of the array
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-test.shift();// delete the first element of the array
+// test.shift();// delete the first element of the array
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-test.unshift("k"); // add one element at the first position of the array
+// test.unshift("k"); // add one element at the first position of the array
 
-test.splice(0,0,"a","s","d"); // in position 0, remove 0 items fro the array, and add the next items
+// test.splice(0,0,"a","s","d"); // in position 0, remove 0 items fro the array, and add the next items
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-test.splice(3,2); // splice deleted the las 2 elements or the array
+// test.splice(3,2); // splice deleted the las 2 elements or the array
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-test.splice(3,0,"z","x"); // next to the position 3, adds 2 elements
+// test.splice(3,0,"z","x"); // next to the position 3, adds 2 elements
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-document.write(test[4] + "<br>");
+// document.write(test[4] + "<br>");
 
-test.splice(4,1,"f"); // replace the element number 4 with an "f"
+// test.splice(4,1,"f"); // replace the element number 4 with an "f"
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-document.write(test.indexOf("z") + "<br>"); // indicate the position of an item in the array
+// document.write(test.indexOf("z") + "<br>"); // indicate the position of an item in the array
 
-let copyTest = test.slice();// copy the array
+// let copyTest = test.slice();// copy the array
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-document.write(copyTest + "<br>");
+// document.write(copyTest + "<br>");
 
-test.reverse();
+// test.reverse();
 
-document.write(test + "<br>");
+// document.write(test + "<br>");
 
-let string = test.join();// becomes the array into a string
+// let string = test.join();// becomes the array into a string
 
-document.write(string);
+// document.write(string);
+
+// let donuts = ["jelly donut", "chocolate donut", "glazed donut"]
+
+// donuts.forEach(function(donut){
+// 	donut += " hole";
+// 	donut = donut.toUpperCase();
+// 	document.write(donut + "<br>");
+// })
+
+// let test =[12, 929, 11,3, 199, 1000, 7, 1, 24, 37, 4,
+//     19, 300, 3775, 299, 36, 209, 148, 169, 299,
+//     6, 109, 20, 58, 139, 59, 3, 1, 139];
+// document.write(test + "<br>");
+
+// test.forEach(function(element, index, array) {
+// 	if(element%3===0){
+// 		test[index] = test[index] + 100;
+// 	}
+// });
+
+// document.write(test);
+
+
+// let donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+// let improvedDonuts = donuts.map(function(donut) {
+// 	donut += " hole" ;
+// 	donut = donut.toUpperCase();
+// 	return donut;
+// })
+
+// document.write(donuts + "<br>" + improvedDonuts);
+
+// let bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+
+// let totals = bills.map(function(bill){
+//  bill= Number((bill + (bill*0.15)).toFixed(2));
+//  // bill = bill.toFixed(2);
+//  // bill = Number(bill);
+//  return bill;
+// })
+
+// document.write(bills + "<br>" + totals);
+
+// let donutBox = [["glazed","chocola glazed","cinnamon"],["powered","sprinkled","glazed cruller"],["chocolate cruller","Boston creme","creme de leche"]];
+
+// document.write(donutBox + "<br><br>" );
+
+// for (let row = 0; row < donutBox.length; row +=1){
+// 	document.write(donutBox[row] + "<br><br>");
+// }
+
+// for (let row = 0; row < donutBox.length; row+=1){
+// 	for (let column = 0; column < donutBox[row].length; column +=1){
+// 		document.write(donutBox[row][column] + "<br>");
+// 	}
+// }
+
+
+// let numbers = [
+//     [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
+//     [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
+//     [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],
+//     [12, 31, 55, 445, 79, 44, 674, 224, 4, 21],
+//     [4, 2, 3, 52, 13, 51, 44, 1, 67, 5],
+//     [5, 65, 4, 5, 5, 6, 5, 43, 23, 4424],
+//     [74, 532, 6, 7, 35, 17, 89, 43, 43, 66],
+//     [53, 6, 89, 10, 23, 52, 111, 44, 109, 80],
+//     [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],
+//     [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
+//     ];
+// document.write(numbers + "<br>");
+
+// for(row = 0; row < numbers.length; row +=1 ){
+// 	for(column= 0; column < numbers[row].length; column +=1){
+// 		if((numbers[row][column])%2===0){
+// 			numbers[row][column] = "even";
+// 		} else {
+// 			numbers[row][column]= "odd";
+// 		}
+// 	}
+// }
+
+// document.write(numbers);
+
+
+// let umbrella = {
+// 	color : "pink",
+// 	isOpen : false,
+// 	open : function() {
+// 		if (umbrella.isOpen === true) {
+// 			return "The umbrella is already opened!";
+// 		} else {
+// 			umbrella.isOpen = true;
+// 			return "You have just opened the umbrella!";
+// 		}
+// 	},
+// 	close : function () {
+// 		if (umbrella.isOpen === false) {
+// 			return "The umbrella is already closed!";
+// 		} else {
+// 			umbrella.isOpen = false;
+// 			return "You have just closed the umbrella!";
+// 		}
+// 	}
+// };
+
+// let brother = {
+// 	name : "Rodolfo",
+// 	age : 39,
+// 	parents : ["Yany", "Benedicto"],
+// 	sibilings : ["Fabian", "Paola", "Felipe"],
+// 	favoriteColor : "Rojo",
+// 	pets : true,
+// 	playVideogames : function() { return "Rodolfo love play videogames!"}
+// };
+
+
+// let savingsAccount = {
+// 	balance : 1000,
+// 	interestRate : 1,
+// 	deposit : function addMoney(amount) {
+// 		if (amount > 0) {
+// 			savingAccounts.balance += amount; 
+// 		}
+// 	},
+// 	withdraw: function removeMoney(amount) {
+// 		if(amount > 0 && (savingsAccount.balance >= amount)){
+// 			savingsAccount.balance -= amount;
+// 		}
+// 	},
+// 	printAccountSummary : function() {
+// 		document.write("Welcome!" + "<br>" + "Your balance is currently $" + savingsAccount.balance + " and your interest rate is " + savingsAccount.interestRate + "%.");
+// 	}
+// };
+
+
+// let facebookProfile = {
+//     name : "Felipe",
+//     friends : 0,
+//     messages : [],
+//     postMessage : function(message){
+//         facebookProfile.messages.push(message);
+//     },
+//     deleteMessage : function(index){
+//         facebookProfile.messages.splice(index,1);
+//     },
+//     addFriend : function() {
+//     	facebookProfile.friends += 1;
+//     },
+//     removeFriend : function() {
+//     	facebookProfile.friends -= 1;
+//     },
+// };
+
+
+let donuts = [
+    { type: "Jelly", cost: 1.22 },
+    { type: "Chocolate", cost: 2.45 },
+    { type: "Cider", cost: 1.59 },
+    { type: "Boston Cream", cost: 5.99 }
+];
+
+donuts.forEach(function(element){
+	document.write(element.type + " donuts cost $" + element.cost + " each" + "<br><br>");
+});
